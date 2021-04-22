@@ -1,0 +1,15 @@
+* {
+  font-family: $ubuntu;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  height: 200px;
+}

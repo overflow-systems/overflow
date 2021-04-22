@@ -1,0 +1,41 @@
+main.incoming {
+  background: $bg-gradient;
+  padding: 2rem 0;
+
+  .content {
+    min-height: calc(100vh - 4rem);
+    position: relative;
+    display: flex;
+    padding-top: 120px;
+
+    .header {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      .logo {
+        max-width: 400px;
+      }
+    }
+
+
+    .left {
+      .title {
+        width: 100%;
+        display: block;
+        text-transform: uppercase;
+        font-size: 4rem;
+        color: $dark-blue;
+        margin: 2rem 0;
+      }
+
+      .building {
+        width: 25vw;
+      }
+    }
+
+    .right {
+
+    }
+  }
+}
