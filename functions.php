@@ -5,7 +5,8 @@ function styles() {
 }
 
 function scripts() {
-  wp_enqueue_script( 'main', get_template_directory_uri().'/assets/dist/js/main-min.js', [], null, true );
+  wp_enqueue_script( 'jquery', "https://code.jquery.com/jquery-3.6.0.min.js", [], null, true );
+  wp_enqueue_script( 'main', get_template_directory_uri().'/assets/dist/js/main-min.js', ['jquery'], null, true );
 }
 
 add_action( 'wp_enqueue_scripts', 'styles' );

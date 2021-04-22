@@ -1,0 +1,1 @@
+$=jQuery,$(".input").on("focus",function(){var t=$(this).parent();$(t).addClass("active")}),$(".input").on("blur",function(){var t=$(this).parent();""==$(this).val()&&$(t).removeClass("active")});

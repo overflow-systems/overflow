@@ -1,12 +1,22 @@
-main.incoming {
+.bg {
   background: $bg-gradient;
-  padding: 2rem 0;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+
+}
+
+main.incoming {
+  padding: 2rem 0 4rem;
 
   .content {
     min-height: calc(100vh - 4rem);
     position: relative;
     display: flex;
     padding-top: 120px;
+    align-items: flex-start;
+    justify-content: space-between;
 
     .header {
       position: absolute;
@@ -14,28 +24,158 @@ main.incoming {
       left: 0;
 
       .logo {
-        max-width: 400px;
+        max-width: 250px;
       }
     }
-
 
     .left {
       .title {
         width: 100%;
         display: block;
         text-transform: uppercase;
-        font-size: 4rem;
+        font-size: 3rem;
         color: $dark-blue;
-        margin: 2rem 0;
+        margin: 2rem 0 4rem;
+        transition: .2s;
+
+        &:hover {
+          color: $blue;
+        }
       }
 
       .building {
-        width: 25vw;
+        width: 100%;
+        transition: .6s;
+
+        &:hover {
+          transform: scale(1.05) translate(20px, 0);
+        }
       }
     }
 
     .right {
+      max-width: 500px;
+      width: 100%;
+      padding-bottom: 5rem;
 
+      .form {
+        background-color: #FFF;
+        width: 100%;
+        box-shadow: 0 20px 20px -10px rgba(#000, .1);
+        padding: 4rem;
+        margin-top: calc(-150px + 2rem);
+
+        > .desc {
+          text-align: center;
+          font-size: 1.5rem;
+          font-weight: 700;
+          color: $dark-blue;
+          margin-bottom: 1rem;
+        }
+
+        .label {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          position: relative;
+          padding-top: 1rem;
+
+          &:not(:last-child) {
+            margin-bottom: 1rem;
+          }
+
+          .desc {
+            padding: 0 .5rem;
+            position: absolute;
+            top: calc(1rem + 1rem);
+            left: 1rem;
+            color: $dark-blue;
+            font-weight: 700;
+            background-color: #FFF;
+            transition: .2s;
+          }
+
+          .input {
+            padding: 1rem;
+            border-radius: 5px;
+            border: 1px solid $blue;
+            resize: none;
+          }
+
+          textarea {
+            height: 150px;
+          }
+
+          &.active {
+            .desc {
+              top: .5em;
+            }
+          }
+        }
+
+        .submit {
+          background-color: $dark-blue;
+          padding: 1rem 2rem;
+          border: none;
+          color: #FFF;
+          border-radius: 5px;
+          display: flex;
+          align-items: center;
+          text-transform: uppercase;
+          font-weight: 700;
+          font-size: .9rem;
+          margin-top: 2rem;
+          cursor: pointer;
+          transition: .2s;
+
+          .icon {
+            max-width: 20px;
+            margin-left: 1rem;
+            transition: .2s;
+          }
+
+          &:hover {
+            background: darken($blue, 10%);
+            .icon {
+              transform: translate(3px, -3px);
+              opacity: .9;
+            }
+          }
+        }
+      }
+
+      .contact-list {
+        margin-top: 2rem;
+        padding-left: 4rem;
+
+        li {
+          &:not(:last-child) {
+            margin-bottom: 1rem;
+          }
+
+          .item {
+            display: inline-flex;
+            align-items: center;
+            color: $dark-blue;
+            font-weight: 700;
+            transition: .2s;
+
+            .icon {
+              width: 30px;
+              margin-right: 1rem;
+              transition: .6s;
+            }
+
+            &:hover {
+              transform: translate(5px, 0);
+
+              .icon {
+                transform: scale(1.1) rotateY(360deg);
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
