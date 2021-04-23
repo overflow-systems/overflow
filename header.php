@@ -5,6 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <meta name="description" content="Criação de sites, identidade visual, loja online, blog na baixada santista, faça um orçamento agora mesmo.">
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-FE1GRJV2FK"></script>
   <script>
@@ -43,6 +45,6 @@
 
   <?php wp_head(); ?>
 
-  <title>Overflow Systems | Em breve</title>
+  <title>Overflow Systems | Criação de Sites na Baixada Santista</title>
 </head>
 <body>

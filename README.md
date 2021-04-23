@@ -14,3 +14,8 @@
 ## WordPress
 - Usuário: overflow
 - Senha: overflow@06042021
+
+## SSH
+```bash
+ssh overflow.dev.br@overflow-dev-br.umbler.net -p 9922
+```
