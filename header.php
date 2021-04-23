@@ -15,6 +15,32 @@
     gtag('config', 'G-FE1GRJV2FK');
   </script>
 
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "LocalBusiness",
+    "name": "Overflow",
+    "image": "https://overflow.dev.br/wp-content/themes/overflow/assets/dist/img/logo.svgwp-content/themes/overflow/assets/dist/img/logo.svg",
+    "url": "https://overflow.dev.br/",
+    "telephone": "+55 (13) 996706150",
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "00:00",
+      "closes": "23:59"
+    },
+    "sameAs": "https://github.com/overflow-system" 
+  }
+  </script>
+
   <?php wp_head(); ?>
 
   <title>Overflow Systems | Em breve</title>
