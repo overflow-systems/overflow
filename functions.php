@@ -12,15 +12,23 @@ function scripts() {
 
 function my_login_logo() { ?>
   <style type="text/css">
-      #login h1 a, .login h1 a {
-          background-image: url('https://overflow.dev.br/wp-content/themes/overflow/assets/dist/img/logo.svg');
-          background-size: contain;
-          width: auto;
-          height: 70px;
-      }
+    #login h1 a, .login h1 a {
+      background-image: url('https://overflow.dev.br/wp-content/themes/overflow/assets/dist/img/logo.svg');
+      background-size: contain;
+      width: auto;
+      height: 70px;
+    }
   </style>
 <?php }
 
+function my_login_logo_url()
+{
+  return home_url();
+}
+
+add_filter('login_headerurl', 'my_login_logo_url');
+
 add_action( 'login_enqueue_scripts', 'my_login_logo' );
+
 add_action( 'wp_enqueue_scripts', 'styles' );
 add_action( 'wp_enqueue_scripts', 'scripts' );
