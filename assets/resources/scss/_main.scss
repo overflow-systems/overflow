@@ -40,6 +40,7 @@ main.incoming {
 
     .left {
       margin-right: 3rem;
+
       .title {
         width: 100%;
         display: block;
@@ -104,6 +105,8 @@ main.incoming {
             font-weight: 700;
             background-color: #FFF;
             transition: .2s;
+            z-index: 20;
+            cursor: text;
           }
 
           .input {
@@ -111,6 +114,8 @@ main.incoming {
             border-radius: 5px;
             border: 1px solid $blue;
             resize: none;
+            width: 100%;
+            z-index: 0;
           }
 
           textarea {
