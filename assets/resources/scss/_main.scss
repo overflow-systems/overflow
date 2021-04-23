@@ -8,6 +8,17 @@
 
 main.incoming {
   padding: 2rem 0 4rem;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50vw;
+    height: 50vh;
+    background: url("../img/wave.svg") left 0 bottom 0/contain no-repeat;
+  }
 
   .content {
     min-height: calc(100vh - 4rem);
