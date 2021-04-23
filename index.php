@@ -17,32 +17,7 @@
     </div>
 
     <div class="right">
-      <form action="#" class="form">
-        <p class="desc">Enquanto isso...</p>
-        <p class="desc">Entre em contato conosco e <br>faça seu orçamento</p>
-
-        <label class="label">
-          <span class="desc">Nome</span>
-          <input type="text" name="nome" class="input" required>
-        </label>
-
-        <label class="label">
-          <span class="desc">Email</span>
-          <input type="mail" name="email" class="input" required>
-        </label>
-
-        <label class="label">
-          <span class="desc">Celular</span>
-          <input type="mail" name="celular" class="input" required>
-        </label>
-
-        <label class="label">
-          <span class="desc">Mensagem</span>
-          <textarea name="mensagem" class="input"></textarea>
-        </label>
-
-        <button type="submit" class="submit">Enviar <img src="<?php echo get_template_directory_uri(); ?>/assets/dist/img/send.svg" alt="" class="icon"></button>
-      </form>
+      <?= do_shortcode('[contact-form-7 id="29" title="Em construção html_class="form"]') ?>
 
       <ul class="contact-list">
         <li>
