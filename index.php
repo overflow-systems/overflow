@@ -27,7 +27,7 @@
           <a href="http://api.whatsapp.com/send?phone=5513981007944&text=Olá, gostaria de fazer um orçamento" class="item"><img src="<?php echo get_template_directory_uri(); ?>/assets/dist/img/whatsapp.svg" alt="" class="icon"> (13) 98100-7944</a>
         </li>
         <li>
-          <a href="mailto:ismel.sousa@overflow.dev.br" class="item"><img src="<?php echo get_template_directory_uri(); ?>/assets/dist/img/email.svg" alt="" class="icon"> ismael.sousa@overflow.dev.br</a>
+          <a href="mailto:atendimento@overflow.dev.br" class="item"><img src="<?php echo get_template_directory_uri(); ?>/assets/dist/img/email.svg" alt="" class="icon">atendimento@overflow.dev.br</a>
         </li>
       </ul>
     </div>
