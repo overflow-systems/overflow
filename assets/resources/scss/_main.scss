@@ -83,6 +83,10 @@ main.incoming {
           font-weight: 700;
           color: $dark-blue;
           margin-bottom: 1rem;
+
+          br {
+            display: block;
+          }
         }
 
         .wpcf7-not-valid-tip {
@@ -106,7 +110,7 @@ main.incoming {
           margin: 1rem 0 0;
         }
 
-        > br { display: none; }
+        br { display: none; }
 
         .label {
           width: 100%;
@@ -114,8 +118,6 @@ main.incoming {
           flex-direction: column;
           position: relative;
           padding-top: 1rem;
-
-          br { display: none; }
 
           &:not(:last-child) {
             margin-bottom: 1rem;
