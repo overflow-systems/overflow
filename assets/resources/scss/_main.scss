@@ -106,12 +106,16 @@ main.incoming {
           margin: 1rem 0 0;
         }
 
+        > br { display: none; }
+
         .label {
           width: 100%;
           display: flex;
           flex-direction: column;
           position: relative;
           padding-top: 1rem;
+
+          br { display: none; }
 
           &:not(:last-child) {
             margin-bottom: 1rem;
