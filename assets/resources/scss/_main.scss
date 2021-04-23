@@ -28,6 +28,7 @@ main.incoming {
     }
 
     .left {
+      margin-right: 3rem;
       .title {
         width: 100%;
         display: block;
@@ -178,11 +179,11 @@ main.incoming {
     }
   }
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 992px) {
     padding: 1rem 0;
 
     .content {
-      flex-direction: column;
+      display: block;
       padding: 0;
       
       .header {
@@ -208,7 +209,8 @@ main.incoming {
 
       .right {
         padding-bottom: 0;
-        
+        margin: 0 auto;
+
         .form {
           margin-top: 0;
           padding: 1rem;
