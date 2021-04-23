@@ -1,1 +1,1 @@
-$=jQuery,$(".input").on("focus",function(){var t=$(this).parent();$(t).addClass("active")}),$(".input").on("blur",function(){var t=$(this).parent();""==$(this).val()&&$(t).removeClass("active")});
+$=jQuery,$(".input").on("focus",function(){var a=$(this).closest(".label");$(a).addClass("active")}),$(".input").on("blur",function(){var a=$(this).closest(".label");""==$(this).val()&&$(a).removeClass("active")}),$("[name=celular]").mask("(00) 90000-0000");
